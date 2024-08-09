@@ -15,7 +15,7 @@ public class BinarySearch {
         int key = sc.nextInt();
         sc.close();
 
-        int res = BinarySearch(arr, n, key);
+        int res = BinarySearchKey(arr, n, key);
         if(res!=-1){
             System.out.println(res);
         }else{
@@ -26,7 +26,7 @@ public class BinarySearch {
 
     }
 
-    public static int BinarySearch(int[] arr, int n, int key){
+    public static int BinarySearchKey(int[] arr, int n, int key){
         int low = 0, high = n-1;
         while(low<high){
             int mid = (low + high) / 2;
